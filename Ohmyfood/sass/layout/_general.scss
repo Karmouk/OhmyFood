@@ -80,6 +80,13 @@ a {
    @media screen and (min-width: 900px){
     margin-bottom:50px;
     align-items: center;
+   
+      padding:0px 100px 0px 100px;
+  
+      
+    
+    
+   
     
     
    }
@@ -135,9 +142,8 @@ a {
 .fonctionnement h2 {
     padding: 10px;
     font-size: 24px;
-    @media screen and (min-width: 900px){
-      padding-left:50px
-   }
+    
+   
   }
 
 
@@ -154,10 +160,20 @@ a {
 .restaurants{
   padding:10px;
   background-color: rgba(243, 243, 243, 1);
+  @media screen and (min-width: 900px) {
+    padding:0px 100px 0px 100px;
+
+    
+  
   
 }  
+}
 .restaurants__titre{
-  padding:10px
+  padding:10px;
+  @media screen and (min-width: 900px) {
+    padding:none;
+  }
+
   
 }
 
@@ -167,9 +183,8 @@ a {
 
   gap:16px;
   @media screen and (min-width: 900px) {
-    display: flex;
-    flex-flow: row ;
-    justify-content: space-between;
+   grid-template-columns:repeat(2,1fr);
+   gap:30px;
 
   }
   
@@ -183,9 +198,9 @@ a {
   margin-bottom:30px;
   box-shadow: 0px 3px 15px #f2f2f2;
  position:relative;
+ filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 
 
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 
@@ -245,17 +260,21 @@ a {
 }
 .footer {
     background-color: #353535;
-    color: white;
-    padding: 15px 0px 15px 0px;
-    box-sizing: border-box;
+    color: #ffffff;
+    padding: 20px;
+    
+    h2{
+    font-family: "Shrikhand", cursive;
+    margin-bottom:4px;
+    }
+    @media screen and (min-width: 900px) {
+      display: flex;
+      flex-direction: row-reverse;
+      gap:10px;
+    }
+
 }
   
-  .footer_logo {
-    font-family: "Shrikhand", cursive;
-    padding-left: 30px;
-    font-size: 15px;
-    margin-bottom:4px;
-  }
   .footer_info {
     display: flex;
     align-items: baseline;

@@ -11,6 +11,7 @@ body {
     width: 100%;
     max-width: 1440px;
     box-sizing: border-box;
+    margin:auto;
   }
   
 h1 {
@@ -106,8 +107,10 @@ a {
     @media screen and (min-width: 900px) {
      
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
+      
      } 
+    
 }
 
 
@@ -151,11 +154,18 @@ a {
     color: grey;
     margin-left: 15px;
     margin-right: 15px;
+    
   }
 
-.fa-store {
-    color: grey;
+.fa-store:hover {
+    color: #9356DC;
   }
+.fa-list:hover{
+  color:#9356DC
+}
+.fa-mobile-alt:hover{
+  color: #9356DC;
+}
  
 .restaurants{
   padding:10px;
@@ -394,6 +404,16 @@ a {
   font-weight: 300;
   line-height: 18.75px;
   text-align: left;
+  position:relative;
+  &::after{
+    content:"";
+    width:53px;
+    height:5px;
+    position:absolute;
+    background-color: #99E2D0;
+    left:0;
+    top:30px;
+  }
  }
  .resto-card{
   background: white;
@@ -404,9 +424,13 @@ a {
   border-radius:20px;
   height:70px;
   box-shadow: 0px 4px 15px 0px #0000001A;
+  animation: slide 1s;
+  overflow: hidden;
+  
 
   :hover .resto-checkbox{
     margin-right:0;
+   
     
    }
 
@@ -438,7 +462,6 @@ a {
   background-color: #99E2D0;
   height:70px;
   border-radius: 0 20px 20px 0;
-  transition: ease-in-out 0,5s;
   display:grid;
   place-items: center;
   i{
@@ -463,4 +486,11 @@ a {
  
   
 
-
+@keyframes slide{
+  0%{
+    transform:scale(0);
+  }
+  100%{
+    transform:scale(1);
+  }
+}

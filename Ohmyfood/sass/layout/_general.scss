@@ -420,12 +420,19 @@ a {
   border-radius:20px;
  }
  .resto-card-info{
+  
   background: white;
   border-radius:20px;
   height:70px;
   box-shadow: 0px 4px 15px 0px #0000001A;
   animation: slide 1s;
   overflow: hidden;
+  @for $i from 2 through 4{
+    &:nth-child(#{$i}) {
+      animation-delay:120ms* $i;
+    }
+  }
+  
   
 
   :hover .resto-checkbox{
@@ -434,7 +441,8 @@ a {
     
    }
 
- }
+ 
+}
  .resto-card-container{
   display:flex;
   flex-direction: row;

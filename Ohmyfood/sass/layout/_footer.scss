@@ -1,0 +1,67 @@
+.footer {
+    background-color: $grey-color;
+    color: #ffffff;
+    padding: 20px;
+    
+    h2{
+    font-family: "Shrikhand", cursive;
+    margin-bottom:4px;
+    @media screen and (min-width: 900px) {
+      padding-top: 50px;
+
+    }
+  }
+    @media screen and (min-width: 900px) {
+      display: flex;
+      flex-direction: row-reverse;
+      gap:10px;
+      padding: 0 20px 10px;
+      
+      
+    }
+
+}
+  
+  .footer_info {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+   
+  }
+  .info1{
+    @media  screen and (min-width:900px) {
+      order:5;
+      margin-right:80px;
+
+      
+    }
+
+  }
+  .info2{
+    @media screen and (min-width:900px) {
+      order:4;
+      margin-right:80px;
+    }
+  }
+  .info3{
+    @media screen and (min-width:900px) {
+      order:2;
+      margin-right:50px;
+      
+    }
+  }
+  .info4{
+    @media screen and (min-width:900px) {
+      
+      margin-right:50px;
+      
+    }
+  }
+  
+  
+  .footer h3 {
+    font-weight: 400;
+    font-size: 16px;
+    @media  screen and (min-width:900px) {padding-top: 60px};
+
+  }

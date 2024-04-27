@@ -26,7 +26,7 @@ a {
     color: #000;
   }
   
-
+////LOCATION
   .location {
     display: flex;
     
@@ -42,6 +42,7 @@ a {
     
    
 }
+/////RECHERCHE
 .search-bar{
     border:1px $grey-color;
     background-color:rgba(234, 234, 234, 1);
@@ -82,6 +83,7 @@ a {
   }
   
 
+///////SECTION FONCTIONNEMENT
 .fonctionnement{
    margin-bottom: 50px;
    justify-content: space-between;
@@ -193,7 +195,7 @@ a {
 }
 
 
-
+//////SECTION RESTAURANT
  
 .restaurants{
   padding:10px;
@@ -208,9 +210,7 @@ a {
 }
 .restaurants__titre{
   padding:10px;
-  @media screen and (min-width: 900px) {
-    padding:0;
-  }
+ 
 
   
 }
@@ -252,6 +252,7 @@ a {
 .card title {
   padding-left:3px;
 }
+/////NOUVEAU
 .nouveauté{
   color: #008766;
   background-color: #99E2D0;
@@ -264,7 +265,7 @@ a {
   
 }
 
-
+/////COEUR
 .fa-heart{
   position: absolute;
   right:20px;
@@ -315,7 +316,7 @@ a {
   padding-bottom:40px;
 }
 
-  
+//////PAGE RESTO
  .resto-img{
   width:100%;
   height:275px;
@@ -539,34 +540,5 @@ a {
   border-radius: 11.2px;
   box-shadow: 28px 0px 0 0 rgba(147,86,220,0.2), 22.7px 16.5px 0 0 rgba(147,86,220,0.4), 8.68px 26.6px 0 0 rgba(147,86,220,0.6), -8.68px 26.6px 0 0 rgba(147,86,220,0.8), -22.7px 16.5px 0 0 #9356dc;
   animation: spinn 1s infinite linear;
-}
-
-@keyframes spinn {
-  to {
-     transform: rotate(360deg);
-  }
-}
-  
-@keyframes change{
-  0%{
-    transform:scale(1);
-    
-  }
-  100%{
-    transform:scale(0);
-   
-  }
-}
-  
-
-@keyframes slide{
-  0%{
-    transform:scale(0);
-    
-  }
-  100%{
-    transform:scale(1);
-   
-  }
 }
 

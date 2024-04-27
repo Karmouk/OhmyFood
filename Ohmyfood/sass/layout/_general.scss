@@ -107,6 +107,7 @@ a {
     display:flex;
     justify-content: center;
     flex-direction: column;
+    cursor:pointer;
     :hover{
       background-color: #eae4f8;
     }
@@ -208,7 +209,7 @@ a {
 .restaurants__titre{
   padding:10px;
   @media screen and (min-width: 900px) {
-    padding:none;
+    padding:0;
   }
 
   
@@ -292,8 +293,8 @@ a {
 }
 .card-txt h3{
   margin-bottom:-15px;
-  font-size: 500;
-  font-weight:18px;
+  font-size: 18px;
+  font-weight:500;
 }
 .card-txt{
   margin-bottom:-15px;
@@ -390,7 +391,8 @@ a {
  .nom-menu{
   font-family: "Shrikhand", cursive;
   font-style: italic;
-  font-weight:30px;
+  font-weight:400;
+  font-size:28px;
  }
  .resto-block{
   padding-bottom:40px;

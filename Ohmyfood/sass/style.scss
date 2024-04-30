@@ -1,6 +1,3 @@
-@import './abstracts/variables';
-@import './abstracts/mixins';
-@import './components/keyframes';
-@import './layout/general';
-@import './layout/header';
-@import './layout/footer';
+@import "./abstracts/variables","./abstracts/mixins";
+@import "./components/keyframes";
+@import "./layout/general","./layout/header","./layout/footer";

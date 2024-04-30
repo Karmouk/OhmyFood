@@ -29,7 +29,6 @@ body {
 
 .main-container {
   width: 100%;
-  max-width: 1440px;
   box-sizing: border-box;
   margin: auto;
 }
@@ -277,7 +276,7 @@ a {
   transform: scale(1.1);
   transition: all 300ms ease-in-out;
 }
-.favori .fa-solid {
+.favori .fa-solid:hover {
   opacity: 1;
 }
 
@@ -485,7 +484,7 @@ a {
   color: #99E2D0;
 }
 
-.second {
+.secondButton {
   justify-content: center;
   display: flex;
   background: rgb(246, 246, 246);

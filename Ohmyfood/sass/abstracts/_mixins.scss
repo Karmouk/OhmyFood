@@ -1,5 +1,5 @@
 @mixin button{
-    background-image: linear-gradient(to top, #9356DC,#FF79DA );
+    background-image: linear-gradient(to top,$primary-color,$secondary-color );
     color: white;
     height: 50px;
     border: none;
